@@ -11,7 +11,7 @@ import org.springframework.web.socket.handler.TextWebSocketHandler;
 @Component
 @Slf4j
 @AllArgsConstructor
-public class FtxSocketHandler extends TextWebSocketHandler {
+public class FtxPublisherHandler extends TextWebSocketHandler {
 
     private Publisher publisher;
 

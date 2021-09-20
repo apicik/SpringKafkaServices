@@ -1,6 +1,6 @@
 package com.example.springkafkaservices.config;
 
-import com.example.springkafkaservices.handler.FtxSocketHandler;
+import com.example.springkafkaservices.handler.FtxPublisherHandler;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;
@@ -21,11 +21,11 @@ import static com.example.springkafkaservices.Constants.FTX_COM_URI;
 @Slf4j
 @RequiredArgsConstructor
 @Getter
-public class FtxConfig {
+public class FtxPublisherConfig {
     private WebSocketSession session;
     private WebSocketClient client;
 
-    private final FtxSocketHandler handler;
+    private final FtxPublisherHandler handler;
 
     @PostConstruct
     @SneakyThrows
