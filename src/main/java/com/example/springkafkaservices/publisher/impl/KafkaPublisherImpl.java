@@ -11,15 +11,8 @@ public class KafkaPublisherImpl implements Publisher {
 
     private KafkaTemplate<String, String> kafkaTemplate;
 
-    private KafkaTemplate<String, String> kafkaTemplate2;
-
-
     @Override
     public void publish(String name, String message) {
-        kafkaTemplate.send(name, message);
-    }
-
-    public void publish2(String name, String message) {
         kafkaTemplate.send(name, message);
     }
 
